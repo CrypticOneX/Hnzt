@@ -1,0 +1,148 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 2px -2px gray;
+  width: 100%;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.banner {
+  background-color: #002f6c;
+  color: white;
+  padding: 50px 20px;
+  width: 100%;
+  min-height: 300px;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.banner p {
+  font-size: 1.2em;
+}
+
+.placement {
+  color: red;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+.batch-info, .other-details {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.batch-info h2, .other-details h3 {
+  margin-bottom: 10px;
+}
+
+.batch-info p, .other-details p {
+  font-size: 1.2em;
+}
+
+.running-text {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.running-text marquee {
+  color: red;
+  font-size: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu a {
+    margin: 10px 0;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+  }
+
+  .batch-info, .other-details {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 1.8em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+
+  .batch-info, .other-details {
+    width: 95%;
+  }
+
+  .running-text marquee {
+    font-size: 1.2em;
+  }
+
+  .placement {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.5em;
+  }
+
+  .banner p {
+    font-size: 0.9em;
+  }
+
+  .running-text marquee {
+    font-size: 1em;
+  }
+
+  .placement {
+    font-size: 1em;
+  }
+}
